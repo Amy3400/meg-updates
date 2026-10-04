@@ -1,8 +1,8 @@
 {
-  "versionCode": 15,
-  "versionName": "0.5.2",
-  "releasePageUrl": "https://github.com/Amy3400/MEG/releases/tag/v0.5.2",
+  "versionCode": 16,
+  "versionName": "0.5.3",
+  "releasePageUrl": "https://github.com/Amy3400/MEG/releases/tag/v0.5.3",
   "notes": "MEG 0.5.2: Fünf Buddy-Figuren und fünf unabhängig wählbare Persönlichkeiten unter „Mein MEG“. Automatische Update-Prüfung beim Start und täglich, sobald eine Manifest-Adresse eingerichtet ist. Updates öffnen das passende private GitHub-Release zur APK-Installation.",
-  "publishedAt": "2026-10-03T14:12:26.236486Z",
+  "publishedAt": "2026-10-04T07:44:00.706364Z",
   "mandatory": false
 }
