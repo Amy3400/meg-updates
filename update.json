@@ -1,8 +1,8 @@
 {
-  "versionCode": 18,
-  "versionName": "0.5.5",
-  "releasePageUrl": "https://github.com/Amy3400/MEG/releases/tag/v0.5.5",
-  "notes": "MEG 0.5.5: Gesprächsmodus deutlich natürlicher. MEG formuliert kurze Antworten statt technischer Statuszeilen, behält zuletzt besprochene Einträge besser im Kontext und zeigt notwendige Änderungen als klare Bestätigungskarte mit „Ausführen“, „Ändern“ oder „Abbrechen“. Mehrteilige Eingaben werden nach dem KI-Verständnis direkt im Chat als gemeinsam übernehmbare Vorschau gezeigt. Der lokale Assistent beantwortet zusätzlich mehr sichere Datenfragen wie „Was steht heute/morgen an?“, offene Aufgaben, Einkaufsliste sowie „Wann/Wo ist …?“ direkt aus dem vollständigen MEG-Bestand. Buddy-Tonalität wirkt subtiler und ohne starre Vorspann-Labels.",
-  "publishedAt": "2026-10-04T14:01:48.629677Z",
+  "versionCode": 20,
+  "versionName": "0.5.7",
+  "releasePageUrl": "https://github.com/Amy3400/MEG/releases/tag/v0.5.7",
+  "notes": "MEG 0.5.7: Kalender-Abgleich und sichere Serientermin-Löschung.\n\n• Kalender sicher abgleichen: MEG vergleicht auf Wunsch alle bisherigen Android-/Google-Kalender mit dem aktuellen MEG-Kalender. Bereits vorhandene Termine werden nicht erneut angelegt, fehlende Kopien werden ergänzt und eindeutige alte Import-Dubletten bereinigt.\n• MEG gewinnt bei Konflikten: Sobald eine importierte Kopie nach dem ersten Import in MEG verändert wurde, überschreibt der Abgleich sie nicht mehr mit der alten Quelle. Auch in MEG gelöschte Termine werden beim Abgleich nicht wiederhergestellt.\n• Vorher prüfen: Die Vorschau zeigt, wie viele Termine bereits vorhanden sind, fehlen, aus der unveränderten Quelle aktualisiert werden könnten, durch MEG-Änderungen geschützt sind oder als Dubletten bereinigt werden.\n• Alte Kalender bleiben außerhalb von MEG unverändert. Nach erfolgreichem Abgleich werden die ausgewählten Quellen lediglich im MEG-Plan ausgeblendet.\n• Serientermine löschen jetzt sicher mit „Nur diesen Termin“, „Diesen und alle folgenden“ oder „Ganze Serie“. Einzelne Ausnahmen werden als Serien-Ausnahme gespeichert; die restliche Serie bleibt erhalten.\n• Natürliche Kurzbefehle werden für typische Fälle verstanden, z. B. „Nur nächsten Mittwoch löschen“ im Gesprächskontext oder „Ab November keine DRK-Dienstabende mehr“.",
+  "publishedAt": "2026-10-04T20:55:40.779291Z",
   "mandatory": false
 }
