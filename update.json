@@ -1,8 +1,8 @@
 {
-  "versionCode": 16,
-  "versionName": "0.5.3",
-  "releasePageUrl": "https://github.com/Amy3400/MEG/releases/tag/v0.5.3",
-  "notes": "MEG 0.5.3: MEG↔MEG-Synchronisierung über einen Ende-zu-Ende-verschlüsselten Relay ohne gemeinsamen Drive-Ordner, gemeinsamer Familienkalender, direkte private Terminfreigabe an den Partner, Kategorie-Sync mit Farbe/Emoji, lokale Duplikatsuche und neue Kalenderabfragen. Der gewählte Buddy erscheint als Assistant-Avatar; neu dabei ist Kiesel.",
-  "publishedAt": "2026-10-04T07:44:00.706364Z",
+  "versionCode": 18,
+  "versionName": "0.5.5",
+  "releasePageUrl": "https://github.com/Amy3400/MEG/releases/tag/v0.5.5",
+  "notes": "MEG 0.5.5: Gesprächsmodus deutlich natürlicher. MEG formuliert kurze Antworten statt technischer Statuszeilen, behält zuletzt besprochene Einträge besser im Kontext und zeigt notwendige Änderungen als klare Bestätigungskarte mit „Ausführen“, „Ändern“ oder „Abbrechen“. Mehrteilige Eingaben werden nach dem KI-Verständnis direkt im Chat als gemeinsam übernehmbare Vorschau gezeigt. Der lokale Assistent beantwortet zusätzlich mehr sichere Datenfragen wie „Was steht heute/morgen an?“, offene Aufgaben, Einkaufsliste sowie „Wann/Wo ist …?“ direkt aus dem vollständigen MEG-Bestand. Buddy-Tonalität wirkt subtiler und ohne starre Vorspann-Labels.",
+  "publishedAt": "2026-10-04T14:01:48.629677Z",
   "mandatory": false
 }
