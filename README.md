@@ -1,36 +1,32 @@
-# MEG – Updates und gemeinsame Testausgabe
+# MEG – Updates und freiwillige Testversionen
 
-Hier liegen die signierten Installationspakete für den MEG-Updater. Der Quellcode, Signierschlüssel und persönliche Daten sind nicht enthalten.
+Hier liegen die signierten Android-Installationspakete für den gemeinsamen MEG-Updater. Quellcode, Signierschlüssel und persönliche Daten sind **nicht** in diesem öffentlichen Repository enthalten.
 
 ## Aktuelle freiwillige Testausgabe
 
-**MEG 0.5.23 · Build 39** ist für den gemeinsamen Praxistest vorgesehen. Diese Ausgabe ist keine abgeschlossene stabile Gesamtversion.
+**MEG 0.5.43 · Build 59** ist für den gemeinsamen Praxistest von Amy und Matze verfügbar. Diese Ausgabe ist **keine abgeschlossene stabile Version**; die Zwei-Geräte-Funktionsabnahme ist noch offen.
 
-- [Testausgabe, Änderungen und Downloads](https://github.com/Amy3400/meg-updates/releases/tag/v0.5.23)
-- [Gemeinsame Testanleitung](https://github.com/Amy3400/meg-updates/releases/download/v0.5.23/TESTANLEITUNG.md)
-- [APK herunterladen](https://github.com/Amy3400/meg-updates/releases/download/v0.5.23/MEG-v0.5.23.apk)
-- [SHA-256-Prüfsumme](https://github.com/Amy3400/meg-updates/releases/download/v0.5.23/MEG-v0.5.23.sha256)
+- [Release und Hinweise](https://github.com/Amy3400/meg-updates/releases/tag/v0.5.43)
+- [Android-APK](https://github.com/Amy3400/meg-updates/releases/download/v0.5.43/MEG-v0.5.43.apk)
+- [SHA-256-Datei](https://github.com/Amy3400/meg-updates/releases/download/v0.5.43/MEG-v0.5.43.sha256)
+- [Gemeinsame Testanleitung](https://github.com/Amy3400/meg-updates/releases/download/v0.5.43/TESTANLEITUNG.md)
 
-## Über MEG aktualisieren
+SHA-256 der APK: `a49d5361238d6653316c5245ad6f43c1dee39ebef0dea742f1c096b2f7961c57`.
 
-1. MEG öffnen und unter **Einstellungen → Über MEG** nach Updates suchen.
-2. Die Hinweise zu **0.5.23 / Build 39** lesen und das Update bewusst starten.
-3. Die Installation im Android-Dialog bestätigen.
-4. MEG wieder öffnen, Versionsnummer und bisherige Daten prüfen.
-5. Für den Familientest zuerst beide Geräte aktualisieren und anschließend die gemeinsame Testanleitung durchgehen.
+## Freiwillig über MEG aktualisieren
 
-Die genaue Beschriftung der Updateprüfung hängt von der bisher installierten MEG-Version ab. Falls die Meldung „Automatische Updates noch nicht eingerichtet“ erscheint, kann die öffentliche APK oben als Update der vorhandenen App geöffnet werden.
+1. **Einstellungen → Über MEG → Nach Update suchen** öffnen.
+2. Das Angebot **0.5.43 (Build 59)** bewusst auswählen.
+3. Je nach bisheriger MEG-Version öffnet sich der Browser oder der bisherige Download-/Installationsdialog. Bei Problemen den öffentlichen APK-Link oben nutzen.
+4. Die bestehende MEG-App **niemals deinstallieren oder App-Daten löschen**. Das APK als Update installieren und nach dem Start Version und eigene Daten prüfen.
+5. Bei Play-Protect-Blockierung, Signaturkonflikt oder unerwartetem Datenverlust **abbrechen und melden**; Schutzmechanismen nicht umgehen.
 
-**Die vorhandene MEG-App nicht deinstallieren und ihre Daten nicht löschen.** Eine vollständige Sicherungs-/Wiederherstellungsfunktion ist noch offen. Bei Installations-, Signatur- oder Play-Protect-Fehlern abbrechen und den genauen Hinweis melden. Ein Downgrade ist kein geprüfter Wiederherstellungsweg.
+## Sicherheits- und Funktionsstand
 
-## Was vor der Bereitstellung geprüft wurde
+Die 0.5.43-APK wurde unverändert aus dem signierten privaten Testkandidaten übernommen. Vor der Freigabe wurden die ursprüngliche SHA-256-Prüfsumme, das Paket `de.meg.assistant`, Version, Produktionssignatur und die öffentliche Download-Datei überprüft. Der eingebettete APK-Installer und seine Android-Berechtigung `REQUEST_INSTALL_PACKAGES` wurden aus **0.5.43** entfernt.
 
-Die APK wurde aus dem bereits erfolgreich geprüften GitHub-Testlauf übernommen. Paketname, Versionsnummer, Prüfsumme und Signatur wurden erneut kontrolliert. Die Signatur stimmt mit der öffentlichen MEG 0.5.22 überein. Die öffentlichen Downloads wurden vor der Umstellung des Updaters auf identische Dateien geprüft.
+Die neuen MEG-Versionen prüfen weiterhin auf Updates, öffnen aber nur noch die GitHub-Seite für den manuellen Download. Ältere, bereits installierte MEG-Versionen können noch die frühere Installationsoberfläche enthalten.
 
-Die Prüfung auf den tatsächlichen Handys, Samsung-/One-UI-Widgets, Benachrichtigungen und gemeinsame Familienabläufe ist Teil dieses Tests und noch nicht abgeschlossen. Weitere bekannte Restfunktionen stehen in den Release-Hinweisen.
+Google Play Protect hat die 0.5.43-APK auf Amys Gerät als *anscheinend sicher* eingestuft. Das ersetzt keine vollständige Sicherheitsprüfung. Kalender, Familie, Freigaben, Widgets und Bridge V2 müssen noch gemeinsam auf beiden echten Geräten geprüft werden. Für die ersten Versuche ausschließlich eindeutig erkennbare Testdaten verwenden.
 
-## Datenschutz und Installation
-
-Das Update ist freiwillig und aktiviert keinen neuen kostenpflichtigen KI-Dienst. Bereits eingerichtete Cloud-Anbieter unterliegen ihren bisherigen Einstellungen und Bedingungen. Android entscheidet über die Installation; es gibt keine automatische stille Installation.
-
-Die App liest `update.json`, lädt die öffentliche APK, prüft ihre SHA-256-Prüfsumme und öffnet danach Androids Installationsdialog. Die JSON-Datei und Release-Dateien enthalten keine Nutzerdaten.
+**Keine Pflichtinstallation, keine stille Aktualisierung und keine Freigabe als stabile Endversion.** Das Update-Manifest enthält `mandatory: false`; es werden keine kostenpflichtigen KI-Dienste neu aktiviert.
